@@ -16,5 +16,23 @@ namespace Lifecycle
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            listBox1.Items.Add("Oranges");
+            listBox1.Items.Add("Grapes");
+            listBox1.Items.Add("Bananas");
+            listBox1.Items.Add("Peaches");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label1.Text = listBox1.Text; 
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
